@@ -21,11 +21,11 @@ let pieceSize = 60; // 45
 const boardPieces = 8;
 let boardSize = boardPieces * squareSize;
 const pieceTypes = {
-  none: 0,
-  red: 1,
-  black: 2,
-  redKing: 3,
-  blackKing: 4
+  // none: 0,
+  // red: 1,
+  // black: 2,
+  // redKing: 3,
+  // blackKing: 4
 };
 
 // var aiColor = pieceTypes.black; // set AI to black pieces

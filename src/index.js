@@ -29,7 +29,7 @@ const pieceTypes = {
 };
 
 var aiColor = pieceTypes.black; // set AI to black pieces
-// const aiColor = pieceTypes.none; // disable AI
+const aiColor = pieceTypes.none; // disable AI
 
 let board;
 let selected;

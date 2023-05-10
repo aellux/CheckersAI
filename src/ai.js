@@ -2,7 +2,7 @@ import {
   copy,
   validMoves,
   normalize,
-  print_board,
+  //print_board,
   isMultiJump
 } from "./index.js";
 
@@ -78,7 +78,7 @@ export function computerMove(validMoves, copyBoard, color) {
   return move;
 }
 
-var boardPieces = 8;
+var boardPieces = 10;
 function extractColor(color, board) {
   let list = [];
   for (let i = 0; i < boardPieces; i++) {

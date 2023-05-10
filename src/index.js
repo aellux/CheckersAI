@@ -8,11 +8,11 @@ let pieceSize = 60; // 45
 const boardPieces = 10;
 let boardSize = boardPieces * squareSize;
 const pieceTypes = {
-  // none: 0,
-  // red: 1,
-  // black: 2,
-  // redKing: 3,
-  // blackKing: 4
+  none: 0,
+  red: 1,
+  black: 2,
+  redKing: 3,
+  blackKing: 4
 };
 
 var aiColor = pieceTypes.black; // set AI to black pieces
@@ -177,10 +177,10 @@ let sketch = function (p) {
         [2, 0, 2, 0, 2, 0, 2, 0, 2, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [1, 0, 1, 0, 1, 0, 1, 0, 1, 0],
         [0, 1, 0, 1, 0, 1, 0, 1, 0, 1],
         [1, 0, 1, 0, 1, 0, 1, 0, 1, 0],
-        [0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+        [0, 1, 0, 1, 0, 1, 0, 1, 0, 1],
+        [1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
       ];
     } else {
       board = [
@@ -190,10 +190,10 @@ let sketch = function (p) {
         [1, 0, 1, 0, 1, 0, 1, 0, 1, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [2, 0, 2, 0, 2, 0, 2, 0, 2, 0],
         [0, 2, 0, 2, 0, 2, 0, 2, 0, 2],
         [2, 0, 2, 0, 2, 0, 2, 0, 2, 0],
-        [0, 2, 0, 2, 0, 2, 0, 2, 0, 2]
+        [0, 2, 0, 2, 0, 2, 0, 2, 0, 2],
+        [2, 0, 2, 0, 2, 0, 2, 0, 2, 0]
       ];
     }
 
@@ -392,7 +392,7 @@ let sketch = function (p) {
     let allMovesList = allMoves(turn);
 
     if (allMovesList.length === 0) return nextTurn;
-    if (turnsSinceEvent >= 80) return 3;
+    if (turnsSinceEvent >= 100) return 3;
     return 0;
   };
 

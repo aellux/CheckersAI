@@ -2,7 +2,7 @@ import {
   copy,
   validMoves,
   normalize,
-  //print_board,
+  print_board,
   isMultiJump
 } from "./index.js";
 
